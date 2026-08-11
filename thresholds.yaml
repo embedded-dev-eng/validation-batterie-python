@@ -1,0 +1,24 @@
+# Seuils de securite pour la validation des tests batterie (cellule Li-ion).
+# Externaliser ces valeurs permet de les faire evoluer sans toucher au code,
+# et de tracer chaque seuil jusqu'a sa source normative (exigence de tout
+# processus de validation serieux, cf. ISO 26262 partie 6 - traceability).
+
+temperature:
+  max_celsius: 55.0
+  reference: >
+    Limite indicative derivee de UN 38.3 (Recommandations ONU sur le transport
+    des marchandises dangereuses, section 38.3 - batteries au lithium) et des
+    fiches techniques constructeur pour cellules NMC/NCA.
+
+voltage:
+  min_volts: 3.0
+  max_volts: 4.2
+  reference: >
+    Plage de tension nominale de decharge/charge pour une cellule Li-ion
+    NMC/NCA standard (hors tension de coupure specifique constructeur).
+
+methodology:
+  reference: >
+    Approche de validation inspiree de la structure d'analyse de securite
+    ISO 26262 (Road vehicles - Functional safety) : definition d'un seuil
+    de securite, verdict PASS/FAIL trace, et rapport horodate des depassements.
