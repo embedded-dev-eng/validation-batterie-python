@@ -111,4 +111,4 @@ battery-log-validator/
 
 ## Auteur
 
-Maroua Taouil — Ingénieur systèmes embarqués.
+Maroua Taouil — Ingénieure systèmes embarqués.
